@@ -790,8 +790,465 @@
 ##    if i==5:
 ##        print()
 ##***************************************************************************************************************************************************
+##Python Program to Solve Quadratic Equation
+##a,b,c=map(int,input("enter a,b,c,value").split())
+##d=(b*b)-(4*a*c)
+##p=d**0.5
+##pr=(-b+p)/(2*a)
+##nr=(-b-p)/(2*a)
+##print("positive result",pr)
+##print("negative result",nr)
+##***********************************************************************************************************************
 
+##Python Program to check given number is prime or not
+##n=int(input("enter a value"))
+##for i in range(2,n//2):
+##    if n%i==0:
+##        print("not prime")
+##        break
+##else:
+##    print("prime")
+##*****************************************************
+##n=int(input("enter a value"))
+##i=2
+##while i<n:
+##    if n%i==0:
+##        print("not prime")
+##        break
+##    i=i+1
+##else:
+##    print("prime")
+##*******************************************************
+#Python Program to check given number is prime or not using flag
+##n=int(input("enter a value"))
+##flag=0
+##for i in range(2,n//2+1):
+##    if n%i==0:
+##        print("not prime")
+##        flag=1
+##        break
+##if flag==0:
+##    print("prime")
+##*************************************************************************************************************************
+## python programs to print factors
+##n=int(input("enter a value"))
+##for i in range(1,n+1):
+##    if n%i==0:
+##        print(i)
+##****************************************************        
+##n=int(input("enter a value"))
+##i=1
+##while i<n+1:
+##    if n%i==0:
+##        print(i)
+##    i=i+1
+##************************************************************************************************************************
+##python program to calculate sum of the factor of a given number
+##n=int(input("enter a value"))
+##s=0
+##for i in range(2,n//2+1):
+##    if n%i==0:
+##        print(i)
+##        s=s+i
+##print("sum of the factors is",s)        
+##******************************************************************************************************************
+## to display sum of indivisual digits of a given number
 
+##n=int(input("enter a number"))
+##s=0
+##while n>0:
+##    r=n%10
+##    s=s+r
+##    n=n//10
+##print("sum=",s)    
+
+##******************************************************************************************************************************
+
+##reverse a number
+##n=int(input("enter a value"))
+##while n>0:
+##    r=n%10
+##    print(r,end="")
+##    n=n//10
+    
+##******************************************************
+##n=int(input("enter a value"))
+##rev=0
+##while n>0:
+##    r=n%10
+##    rev=(rev*10)+r
+##    n=n//10
+##print(rev)
+##****************************************************************************************************************
+##python program to calculate GCD of two numbers
+##a,b=map(int,input("enter a,b values").split())
+##while b!=0:
+##    r=a%b
+##    if r==0:
+##        print(b)
+##        break
+##    a=b
+##    b=r
+##***************************************************
+##a,b=map(int,input("enter a,b values").split())
+##while b!=0:
+##    r=a%b
+##    a=b
+##    b=r
+##print(a)    
+##*****************************************************
+##a,b=map(int,input("enter a,b values").split())
+##
+##if a>b:
+##    m=b
+##else:
+##    m=a
+##
+##for i in range(m,1,-1):
+##    if a%i==0 and b%i==0:
+##        print(i)
+##        break
+##**********************************************************************************************************************
+##python program to calculate LCM of two numbers
+##a,b=map(int,input("enter a,b value").split())
+##m=a
+##n=b
+##while b!=0:
+##    r=a%b
+##    if r==0:
+##        c=b
+##        break
+##    a=b
+##    b=r
+##lcm=(m*n)//b
+##print(lcm)
+##***********************************************************************************************************    
+##python program to count number of factor for a given number excluding 1 and n    
+
+##n=int(input("enter a value"))
+##count=0
+##for i in range(2,n//2+1):
+##    if n%i==0:
+##        print(i)
+##        count=count+1
+##print("number of the factor",count)       
+##*************************************************************************************       
+
+##python program to check whether given number is prime or not based on factor
+##n=int(input("enter a value"))
+##count=0
+##for i in range(2,n//2+1):
+##    if n%i==0:
+##        count=count+1
+##if count==0:
+##    print("prime")
+##else:
+##    print("not prime")
+######***********************************************************************************************************
+##a,b=map(int,input("enter a,b values").split())
+##while b!=0:
+##    r=a%b
+##    if r==0:
+##        c=b
+##        break
+##    a=b
+##    b=r
+##if c==1:
+##    print("a and b are the co-prime of each other")
+##else:
+##    print("a and b are not co-prime of each other")
+##    
+##*****************************************************************************************************************************
+##Inverted Pyramid of Numbers
+##11111
+##2222
+##333
+##44
+##5
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    for j in range(1,n+1):
+##        if i<=j:
+##            print(i,end=" ")
+##    print()    
+##********************************************************************************************************************        
+##Inverted Pyramid of Descending Numbers
+##5 5 5 5 5 
+##
+##4 4 4 4 
+##
+##3 3 3 
+##
+##2 2 
+##
+##1
+##n=int(input("enter a number"))
+##for i in range(n,0,-1):
+##    for j in range(1,n+1):
+##        if i>=j:
+##            print(i,end=" ")
+##    print()
+##***********************************************************************************************************************
+##Inverted Pyramid of the Same Digit
+##5 5 5 5 5 
+##
+##5 5 5 5 
+##
+##5 5 5 
+##
+##5 5 
+##
+##5
+##n=int(input("enter a number"))
+##for i in range(n,0,-1):
+##    for j in range(1,n+1):
+##        if i>=j:
+##            print("5",end=" ")
+##    print()
+
+##*****************************************************************************************************************
+##Reverse Pyramid of Numbers
+##Pattern:
+##
+##1 
+##
+##2 1 
+##
+##3 2 1 
+##
+##4 3 2 1 
+##
+##5 4 3 2 1
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    for j in range(i,0,-1):
+##        print(j,end=" ")
+##          
+##    print()    
+##**************************************************************************************************************************
+##Pyramid of Natural Numbers Less Than 10
+##Pattern:
+##
+##1 
+##
+##2 3 4 
+##
+##5 6 7 8 9
+##n=int(input("enter a number"))
+##c=1
+##for i in range(1,n+1,2):
+##    for j in range(1,i+1):
+##        if c<10:       
+##            print(c,end=" ")
+##            c=c+1  
+##    print()  
+####************************************************************************************************************************
+##Reverse Pattern of Digits from 10 
+##Pattern:
+##1
+##3 2
+##6 5 4
+##10 9 8 7
+##n=int(input("enter a number"))
+##c=1
+##for i in range(1,n+1):
+##    for j in range(1,i+1):
+##        if c<=10:       
+##            print(c,end=" ")    
+##            c=c+1
+##            
+##    print()
+##*************************************************
+##start = 1
+##stop = 2
+##currentNumber = stop
+##for row in range(2, 6):
+##    for col in range(start, stop):
+##        currentNumber -= 1
+##        print(currentNumber, end=" ")
+##    print()
+##
+##    start = stop
+##
+##    stop += row
+##
+##    currentNumber = stop
+##**********************************************************************************************************
+##Unique Pyramid Pattern of Digits
+##Pattern:
+##1 
+##
+##1 2 1 
+##
+##1 2 3 2 1 
+##
+##1 2 3 4 3 2 1 
+##
+##1 2 3 4 5 4 3 2 1
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    for j in range(1,i+1):
+##        print(j,end=" ")
+##    for j in range(i-1,0,-1):
+##        print(j,end=" ")    
+##    print()    
+##***************************************************************************************************************
+##Connected Inverted Pyramid Pattern of Numbers
+##Pattern:
+##5 4 3 2 1 1 2 3 4 5 
+##
+##5 4 3 2 2 3 4 5 
+##
+##5 4 3 3 4 5 
+##
+##5 4 4 5 
+##
+##5 5
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    for j in range(n,0,-1):
+##        if i<=j:
+##            print(j,end=" ")
+##    for j in range(1,n+1):
+##        if i<=j:
+##            print(j,end=" ")        
+##    print()    
+##**********************************************************************************************************************
+##Even Number Pyramid Pattern
+##Pattern:
+##10 
+##10 8 
+##10 8 6 
+##10 8 6 4 
+##10 8 6 4 2
+##n=int(input("enter a number"))
+##for i in range(10,0,-2):
+##    for j in range(10,i-1,-2):
+##        print(j,end=" ")
+##    print()    
+##****************************************************************************************************************************
+##Pyramid of Horizontal Tables
+##Pattern:
+##0  
+##0 1  
+##0 2 4  
+##0 3 6 9  
+##0 4 8 12 16  
+##0 5 10 15 20 25  
+##0 6 12 18 24 30 36
+##n=int(input("enter a number"))
+##p=0
+##for i in range(n+1):
+##    for j in range(i+1):
+##        print(j*p,end=" ")
+##    p=p+1
+##    print()
+##**************************************************************************************************************************
+##Pyramid Pattern of Alternate Numbers
+##Pattern:
+##1 
+##3 3 
+##5 5 5 
+##7 7 7 7 
+####9 9 9 9 9
+##n=int(input("enter a number"))
+##for i in range(1,n+1,2):
+##    for j in range(1,i+1,2):
+##        print(i,end=" ")
+##    print()
+##*********************************************************************************************************************
+##Mirrored Pyramid (Right-angled Triangle) Pattern of Numbers
+##Pattern:
+##
+##           1 
+##
+##         1 2 
+##
+##      1 2 3 
+##
+##   1 2 3 4 
+##
+## 1 2 3 4 5
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##        print(j,end="")
+##    print()
+##************************************************************************************************************************
+##enter a number5
+##1 2 3 4 5 
+## 1 2 3 4 
+##  1 2 3 
+##   1 2 
+##    1 
+##n=int(input("enter a number"))
+##for i in range(n,0,-1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##            print(j,end=" ")
+##    print()
+##***********************************************************************************************************************
+##enter a number5
+##    1 
+##   1 2 
+##  1 2 3 
+## 1 2 3 4 
+##1 2 3 4 5
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##            print(j,end=" ")
+##    print()
+##**************************************************************************************************************
+## Equilateral Triangle with Stars (Asterisk Symbol)
+##Pattern:
+##
+##            *   
+##           * *   
+##          * * *   
+##         * * * *   
+##        * * * * *   
+##       * * * * * *   
+##      * * * * * * *
+
+##n=int(input("enter a number"))
+##for i in range(1,n+1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##        print("*",end=" ")
+##    print()    
+
+##**********************************************************************************************************************
+##Downward Triangle Pattern of Stars
+##Pattern:
+##        * * * * * * 
+##         * * * * * 
+##          * * * * 
+##           * * * 
+##            * * 
+##             * 
+##n=int(input("enter a number"))
+##for i in range(n,0,-1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##        print("*",end=" ")
+##    print() 
+##**************************************************************************************************************************
+##Pyramid Pattern of Stars
+##Pattern:
+##* 
+##* * 
+##* * * 
+##* * * * 
+##* * * * *
+##n=int(input("enter a number"))
+##for i in range(n,0,-1):
+##    print(" "*(n-i),end="")
+##    for j in range(1,i+1):
+##        print("*",end=" ")
+##    print()
 
 
 
